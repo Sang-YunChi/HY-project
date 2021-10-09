@@ -69,12 +69,12 @@ class InBodyWriteActivity : AppCompatActivity() {
         save_btn.setOnClickListener {
             var InbodyModel = inbodyModel()
             InbodyModel.UID = auth?.currentUser?.uid
-            InbodyModel.weight = weight_txt.text.toString()
+            InbodyModel.weight = (weight_txt.text.toString()).toLong()
             InbodyModel.date = cal.timeInMillis
-            InbodyModel.muscleMass = muscleMass_txt.text.toString()
-            InbodyModel.bodyFatMass = bodyFatMass_txt.text.toString()
-            InbodyModel.bodyFat = bodyFat_txt.text.toString()
-            InbodyModel.bmi = bmi_txt.text.toString()
+            InbodyModel.muscleMass = (muscleMass_txt.text.toString()).toLong()
+            InbodyModel.bodyFatMass = (bodyFatMass_txt.text.toString()).toLong()
+            InbodyModel.bodyFat = (bodyFat_txt.text.toString()).toLong()
+            InbodyModel.bmi = (bmi_txt.text.toString()).toLong()
 
 
             firestore?.collection("InbodyRecords")?.document("record_${auth?.currentUser?.uid}_${cal.timeInMillis}")?.set(InbodyModel)

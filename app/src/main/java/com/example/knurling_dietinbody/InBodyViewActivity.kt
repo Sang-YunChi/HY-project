@@ -34,7 +34,7 @@ class InBodyViewActivity : AppCompatActivity() {
         back_btn.setOnClickListener {
             finish()
         }
-        firestore?.collection("InbodyRecords")?.whereEqualTo("date",date?.toLong())//1619271434933
+        firestore?.collection("InbodyRecords")?.whereEqualTo("date",date?.toLong())
                 ?.get()?.addOnSuccessListener { documents ->
                     for(doc in documents){
                         weight_text.text = doc?.data?.get("weight").toString()

@@ -32,6 +32,7 @@ class InBodyListActivity : AppCompatActivity() {
             finish()
         }
 
+        //레이아웃 매니저 : 리사이클러뷰의 형태 결정.
         val layoutManager = LinearLayoutManager(this)
         layoutManager.setReverseLayout(true)
         layoutManager.setStackFromEnd(true)

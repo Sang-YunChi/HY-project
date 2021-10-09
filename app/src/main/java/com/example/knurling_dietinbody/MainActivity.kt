@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        mydiary_btn2.setOnClickListener {
+        Inbody_btn.setOnClickListener {
             val intent = Intent(this, InBodyListActivity::class.java)
             startActivity(intent)
         }

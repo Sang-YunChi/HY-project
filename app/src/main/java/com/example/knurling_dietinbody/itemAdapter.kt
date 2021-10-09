@@ -67,6 +67,4 @@ class itemAdapter(private val context: Context): RecyclerView.Adapter<RecyclerVi
             }
         }
     }
-    //TODO 리사이클러 뷰 클릭 이벤트 구현하기 - 이것만 성공하면 끝남
-
 }
