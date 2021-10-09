@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/nurling_blue"
+    tools:context=".DiaryListActivity">
+    <!-- 상단바 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_brown">
+        <ImageView
+            android:layout_width="60dp"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:id="@+id/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 식단 목록"
+            android:textColor="@color/dark_brown"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gyeonggi_batang"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/diary_list"
+            android:layout_marginBottom="60dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/write_btn"
+            android:layout_gravity="bottom"
+            android:background="@color/dark_brown"
+            android:fontFamily="@font/gyeonggi_batang"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:text="글쓰기" />
+    </FrameLayout>
+</LinearLayout>

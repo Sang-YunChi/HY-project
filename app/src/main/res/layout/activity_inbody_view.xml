@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/nurling_blue"
+    tools:context=".DiaryViewActivity">
+    <!-- 상단바 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_brown">
+        <ImageView
+            android:layout_width="60dp"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:id="@+id/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인바디 상세보기"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_brown"
+            android:fontFamily="@font/gyeonggi_batang"/>
+    </FrameLayout>
+    <!--스크롤 뷰는 항상 뭐로 감싸서 넣기-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/inbody_img_view"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/photo_default" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="날짜"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/inbody_date_txt"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="날짜"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="무게(kg)"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/weight_text"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="무게"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="근육량(kg)"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/muscleMass_text"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="근육량"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="체지방량(%)"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bodyFatMass_text"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="체지방량"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="체지방률(%)"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bodyFat_text"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="체지방률"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="BMI"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmi_text"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:padding="10dp"
+                android:text="BMI"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/delete_btn"
+        android:text="삭제하기"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:background="@color/light_red"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

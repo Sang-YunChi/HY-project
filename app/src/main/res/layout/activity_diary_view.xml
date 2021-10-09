@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/nurling_blue"
+    tools:context=".DiaryViewActivity">
+    <!-- 상단바 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/light_brown">
+        <ImageView
+            android:layout_width="60dp"
+            android:padding="10dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:id="@+id/back_btn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="식단 상세보기"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/dark_brown"
+            android:fontFamily="@font/gyeonggi_batang"/>
+    </FrameLayout>
+    <!--스크롤 뷰는 항상 뭐로 감싸서 넣기-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:id="@+id/img_view"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/photo_default" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="식단"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/diet_text"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="식단"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="날짜"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/date_txt"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:gravity="center"
+                android:text="날짜"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gyeonggi_batang"
+                android:text="음식 종류/칼로리"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_text"
+                    android:fontFamily="@font/gyeonggi_batang"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:text="음식 종류/칼로리"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/delete_btn"
+        android:text="삭제하기"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:background="@color/light_red"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

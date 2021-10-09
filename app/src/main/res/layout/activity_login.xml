@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/nurling_blue"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nurling"
+        android:layout_marginTop="200dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/google_login_btn"
+        android:backgroundTint="@color/brown"
+        android:text="구글 로그인"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+    <!-- 우선은 구글 로그인만 구현-->
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/contact_btn"
+        android:backgroundTint="@color/gray"
+        android:text="문의하기"
+        android:fontFamily="@font/gyeonggi_batang"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/gyeonggi_batang"
+            android:textColor="@color/gray"
+            android:text="Copyright 2021. nurling. all rights reserved." />
+    </FrameLayout>
+</LinearLayout>
